@@ -7,6 +7,7 @@ import static io.restassured.RestAssured.given;
 import static org.junit.Assert.*;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -29,7 +30,7 @@ public class StepDefination extends Utils{
 	Response response;
 
 	@Given("Add Place Payload")
-	public void add_Place_Payload() throws FileNotFoundException {
+	public void add_Place_Payload() throws IOException {
 		//RestAssured.baseURI = "https://rahulshettyacademy.com";
 
 		// Serialize
