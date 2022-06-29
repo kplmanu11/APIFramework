@@ -10,4 +10,5 @@ Scenario Outline: Verify if the data driven functionlity is working fine
 Examples:
 		|name|	language	|	address|
 		|AAhouse	|	English|	World cross center|
+		|BBhouse	|Spanish | 	Sea Cross center	| 
 		
