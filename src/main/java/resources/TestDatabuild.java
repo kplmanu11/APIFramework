@@ -25,7 +25,30 @@ public class TestDatabuild {
 		d.setLat(-31.3213);
 		d.setLng(324.323);
 		pc.setLocation(d);
-		
+
+		return pc;
+
+	}
+
+	public PojoClass dataDrivenPayload(String name, String language, String address) {
+		PojoClass pc = new PojoClass();
+
+		pc.setAccuracy(50);
+		pc.setName(name);
+		pc.setPhone_number("111-222-333");
+		pc.setAddress(address);
+		pc.setWebsite("https://www.google.com");
+		pc.setLanguage(language);
+
+		List<String> myTypes = new ArrayList<String>();
+		myTypes.add("shoe-park");
+		myTypes.add("shop");
+		pc.setTypes(myTypes);
+
+		Direction d = new Direction();
+		d.setLat(-31.3213);
+		d.setLng(324.323);
+		pc.setLocation(d);
 		return pc;
 
 	}
